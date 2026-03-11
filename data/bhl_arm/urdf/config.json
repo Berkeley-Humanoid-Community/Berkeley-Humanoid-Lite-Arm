@@ -1,0 +1,21 @@
+{
+    "document_id": "fad95edabc0b1ebab55ef2b5",
+    "output_format": "urdf",
+    "assembly_name": "Sim",
+    "configuration": "Configuration=BetterDummy",
+    "robot_name": "bhl_arm",
+    "output_filename": "bhl_arm",
+    "ignore": {},
+    "round_decimals": 12,
+    "merge_stls": true,
+    "simplify_stls": true,
+    "max_stl_size": 2,
+    "use_scads": true,
+    "joint_properties": {
+        "default": {
+            "max_effort": 100,
+            "max_velocity": 100,
+            "friction": 0.1
+        }
+    }
+}

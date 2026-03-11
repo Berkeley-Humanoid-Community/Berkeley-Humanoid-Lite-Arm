@@ -1,0 +1,13 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Frame visualization temp files (motion_retargeting.create_frame_visualization_xml)
+**/tmp*.xml
