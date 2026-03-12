@@ -3,6 +3,13 @@
 [![Python](https://img.shields.io/badge/python-3.11-blue.svg)](https://docs.python.org/3/whatsnew/3.11.html)
 [![License](https://img.shields.io/badge/license-MIT-yellow.svg)](https://opensource.org/license/mit)
 
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/84104020-76b0-4cef-8ed8-7ea395ef2de8" alt="NAI-Pose-1" width="400px"></td>
+    <td><img src="https://github.com/user-attachments/assets/4e47b86b-4fef-4f79-a4da-fdef86502ec9" alt="NAI-Pose-2" width="400px"></td>
+ </tr>
+</table>
+
 We are building a new bimanual arm platform for the Berkeley Humanoid Lite project!
 
 This version improves upon the original [BHL](https://github.com/HybridRobotics/Berkeley-Humanoid-Lite) with a more robust hardware stack and refined mechanical design.
@@ -21,6 +28,8 @@ While making these upgrades, our goal remains the same: building open-source, ac
 ## CAD Source
 
 [Onshape project](https://cad.onshape.com/documents/a91acc2c2b9072230d69b3af/w/13818f4f8c3432771bd4146f/e/b03e950d8d77cb51d8732685?renderMode=0&uiState=69b248ebb7254faf3c62ff10)
+
+![](https://github.com/user-attachments/assets/4cb33d44-de2a-4fcc-bb4b-6156c7f03db3)
 
 *Note: we are still refining the actuator selection and the design of the head, so that part is not open-sourced yet.*
 
@@ -311,4 +320,4 @@ Consider joining our [Discord channel](https://discord.gg/yH8XZDMrwA).
 
 ## Acknowledgement
 
-We would like to thank Robstride Dynamics, DeepCybo, and Zhongguancun Academy (ZGCA) for the collaboration and support.
+We would like to thank [DeepCybo](https://deepcybo.top/) and [Zhongguancun Academy (ZGCA)](https://www.bza.edu.cn/en/) for the collaboration and support.
