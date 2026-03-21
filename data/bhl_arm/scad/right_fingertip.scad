@@ -1,4 +1,4 @@
-% scale(1000) import("right_dummy_finger.stl");
+% scale(1000) import("right_fingertip.stl");
 
 translate([585, 0, 0])
 rotate([0, 90, 0])

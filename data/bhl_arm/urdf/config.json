@@ -1,8 +1,7 @@
 {
-    "document_id": "fad95edabc0b1ebab55ef2b5",
+    "document_id": "a91acc2c2b9072230d69b3af",
     "output_format": "urdf",
     "assembly_name": "Sim",
-    "configuration": "Configuration=BetterDummy",
     "robot_name": "bhl_arm",
     "output_filename": "bhl_arm",
     "ignore": {},
