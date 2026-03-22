@@ -17,14 +17,14 @@ def _default_joint_names() -> tuple[str, ...]:
 def _default_initial_joint_positions() -> tuple[float, ...]:
     return (
         0.0,
-        0.02,
+        -1.5708,
         0.0,
         -1.68,
         0.0,
         0.0,
         0.0,
         0.0,
-        0.02,
+        1.5708,
         0.0,
         -1.68,
         0.0,

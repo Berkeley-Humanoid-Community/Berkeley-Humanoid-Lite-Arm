@@ -46,8 +46,8 @@ def _default_actuator_configs() -> dict[str, BHLArmActuatorConfig]:
             id=12,
             model="rs-00",
             direction=-1,
-            lower_limit=radians(-10),
-            upper_limit=radians(190),
+            lower_limit=radians(-90),
+            upper_limit=radians(110),
         ),
         "left_shoulder_yaw": BHLArmActuatorConfig(
             id=13,
@@ -95,8 +95,8 @@ def _default_actuator_configs() -> dict[str, BHLArmActuatorConfig]:
             id=22,
             model="rs-00",
             direction=-1,
-            lower_limit=radians(-190),
-            upper_limit=radians(10),
+            lower_limit=radians(-110),
+            upper_limit=radians(90),
         ),
         "right_shoulder_yaw": BHLArmActuatorConfig(
             id=23,
