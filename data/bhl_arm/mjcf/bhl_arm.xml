@@ -40,19 +40,19 @@
       <body name="left_shoulder_pitch" pos="0 0.0506077 0.683054" quat="0.766046 -0.642786 0 0">
         <inertial pos="-6.27e-10 -0.00168619 0.033177" quat="0.696279 -0.123273 0.123273 0.696279"
           mass="0.375" diaginertia="0.000238351 0.000232695 0.000194679" />
-        <joint name="left_shoulder_pitch" pos="0 0 0" axis="0 0 1" range="-0.785398 3.14159"
+        <joint name="left_shoulder_pitch" pos="0 0 0" axis="0 0 1" range="-3.14159 0.785398"
           actuatorfrcrange="-100 100" frictionloss="0.1" armature="0.01" />
         <geom pos="-6.27e-10 -0.00168619 0.033177" quat="0.766046 0.642786 0 0" type="mesh"
           contype="0" conaffinity="0" group="1" density="0" rgba="0.498039 0.498039 0.498039 1"
           mesh="left_shoulder_pitch_visual" />
         <body name="left_shoulder_roll" pos="0.0286 0 0.04"
           quat="0.541674 0.454519 0.541677 0.454519">
-          <inertial pos="0.000265105 0.0799458 -0.028598"
-            quat="0.707133 0.707031 0.00606907 0.0057196" mass="0.41"
-            diaginertia="0.000506842 0.000478762 0.000198322" />
-          <joint name="left_shoulder_roll" pos="0 0 0" axis="0 0 1" range="-3.31613 0.174533"
+          <inertial pos="-2.43656e-06 0.0799616 -0.0285998"
+            quat="0.70711 0.707103 0.000189207 -0.000320348" mass="0.41"
+            diaginertia="0.000505028 0.000477612 0.00019823" />
+          <joint name="left_shoulder_roll" pos="0 0 0" axis="0 0 1" range="-1.5708 1.91986"
             actuatorfrcrange="-100 100" frictionloss="0.1" armature="0.01" />
-          <geom pos="0.000265105 0.0799458 -0.028598" quat="0.707105 0 -0.707108 0" type="mesh"
+          <geom pos="-2.43656e-06 0.0799616 -0.0285998" quat="0.707105 0 -0.707108 0" type="mesh"
             contype="0" conaffinity="0" group="1" density="0" rgba="0.862745 0.661119 0.124438 1"
             mesh="left_shoulder_roll_visual" />
           <body name="left_shoulder_yaw" pos="0 0.12 -0.0286" quat="0.499998 0.5 -0.5 0.500002">
@@ -69,7 +69,7 @@
               <inertial pos="-0.00839498 0.029296 -0.0285985"
                 quat="0.992799 4.29972e-05 2.00836e-05 0.119789" mass="0.1"
                 diaginertia="0.00011021 8.1252e-05 7.69856e-05" />
-              <joint name="left_elbow_pitch" pos="0 0 0" axis="0 0 1" range="0 2.35619"
+              <joint name="left_elbow_pitch" pos="0 0 0" axis="0 0 1" range="-2.35619 0"
                 actuatorfrcrange="-100 100" frictionloss="0.1" armature="0.01" />
               <geom pos="-0.00839498 0.029296 -0.0285985" type="mesh" contype="0" conaffinity="0"
                 group="1" density="0" rgba="0.647059 0.647059 0.647059 1"
@@ -81,7 +81,7 @@
                   diaginertia="0.000973922 0.000965038 0.000297706" />
                 <joint name="left_wrist_yaw" pos="0 0 0" axis="0 0 1" range="-1.5708 1.5708"
                   actuatorfrcrange="-100 100" frictionloss="0.1" armature="0.01" />
-                <geom size="0.03 0.05" pos="3.4253e-08 2.72636e-07 0" quat="1.32679e-06 0 0 1"
+                <geom size="0.03 0.05" pos="3.4253e-08 2.72636e-07 0" quat="1.32679e-06 0 0 -1"
                   type="cylinder" />
                 <geom pos="-8.1362e-08 9.69836e-05 -0.0600917" quat="0.707105 -0.707108 0 0"
                   type="mesh" contype="0" conaffinity="0" group="1" density="0"
@@ -109,7 +109,7 @@
                       quat="0.707105 -0.707108 0 0">
                       <inertial pos="0 0 0" mass="1e-09" diaginertia="1e-09 1e-09 1e-09" />
                       <geom size="0.008 0.035" pos="0.007 0.022 -0.12"
-                        quat="9.38184e-07 0.707105 0.707108 9.38187e-07" type="cylinder" />
+                        quat="9.38184e-07 -0.707105 -0.707108 9.38187e-07" type="cylinder" />
                       <geom pos="0.697 0.0245003 -0.705" quat="0.499998 0.5 -0.500002 -0.5"
                         type="mesh" contype="0" conaffinity="0" group="1" density="0"
                         mesh="left_fingertip_visual" />
@@ -131,12 +131,12 @@
           mesh="right_shoulder_pitch_visual" />
         <body name="right_shoulder_roll" pos="0.0286 0 -0.04"
           quat="0.541674 -0.454519 0.541677 -0.454519">
-          <inertial pos="-0.000265072 0.0799457 -0.028598"
-            quat="0.707133 0.707031 -0.00606734 -0.00572043" mass="0.41"
-            diaginertia="0.000506848 0.000478768 0.000198323" />
-          <joint name="right_shoulder_roll" pos="0 0 0" axis="0 0 1" range="-0.174533 3.31613"
+          <inertial pos="2.50093e-06 0.0799615 -0.0285998"
+            quat="0.707111 0.707103 -0.000186999 0.00032223" mass="0.41"
+            diaginertia="0.000505034 0.000477617 0.000198231" />
+          <joint name="right_shoulder_roll" pos="0 0 0" axis="0 0 1" range="-1.91986 1.5708"
             actuatorfrcrange="-100 100" frictionloss="0.1" armature="0.01" />
-          <geom pos="-0.000265072 0.0799457 -0.028598"
+          <geom pos="2.50093e-06 0.0799615 -0.0285998"
             quat="9.38184e-07 -0.707105 -9.38187e-07 -0.707108" type="mesh" contype="0"
             conaffinity="0" group="1" density="0" rgba="0.862745 0.661119 0.124438 1"
             mesh="right_shoulder_roll_visual" />
@@ -187,11 +187,11 @@
                       range="-0.785398 0.785398" actuatorfrcrange="-100 100" frictionloss="0.1"
                       armature="0.01" />
                     <geom pos="-0.00555416 0.0940292 -0.015489"
-                      quat="9.38184e-07 -0.707105 -9.38187e-07 -0.707108" type="mesh" contype="0"
+                      quat="9.38184e-07 0.707105 -9.38187e-07 0.707108" type="mesh" contype="0"
                       conaffinity="0" group="1" density="0" rgba="0.647059 0.647059 0.647059 1"
                       mesh="right_wrist_pitch_visual" />
                     <body name="right_fingertip" pos="0.007 0.215 -0.0005"
-                      quat="9.38184e-07 9.38187e-07 -0.707108 -0.707105">
+                      quat="9.38184e-07 9.38187e-07 0.707108 0.707105">
                       <inertial pos="0 0 0" mass="1e-09" diaginertia="1e-09 1e-09 1e-09" />
                       <geom size="0.008 0.035" pos="0.007 -0.022 -0.12"
                         quat="0.707105 0 0 -0.707108" type="cylinder" />
