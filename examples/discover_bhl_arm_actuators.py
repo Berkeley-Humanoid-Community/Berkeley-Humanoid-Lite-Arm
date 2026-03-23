@@ -1,6 +1,6 @@
 import argparse
 
-from robstride_dynamics import RobstrideBus
+from actuator_control import RobstrideBus
 
 from lerobot_robot_bhl_arm import BHLArmConfig
 
@@ -38,13 +38,8 @@ def main() -> None:
 
     for bus_name, channel in config.bus_configs.items():
         expected = expected_actuators_for_bus(config, bus_name)
-        bus = RobstrideBus(channel=channel, motors={})
-
-        try:
-            bus.connect()
-            detected_ids = bus.scan_channel(channel, start_id=args.start_id, end_id=args.end_id)
-        finally:
-            bus.disconnect()
+        detected = RobstrideBus.scan_channel(channel, start_id=args.start_id, end_id=args.end_id)
+        detected_ids = sorted(detected)
 
         print(f"\n[{bus_name}] channel={channel}")
         print(f"Detected actuator IDs: {detected_ids}")
