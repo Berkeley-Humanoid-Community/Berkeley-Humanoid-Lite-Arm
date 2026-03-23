@@ -6,11 +6,11 @@ from pathlib import Path
 from typing import Any
 
 import numpy as np
+from actuator_control import Motor, RobstrideBus
 from lerobot.cameras.utils import make_cameras_from_configs
 from lerobot.processor import RobotAction, RobotObservation
 from lerobot.robots import Robot
 from lerobot.utils.decorators import check_if_already_connected, check_if_not_connected
-from robstride_dynamics import Motor, RobstrideBus
 from tqdm import tqdm
 
 from .config_bhl_arm import BHLArmConfig
@@ -157,9 +157,9 @@ class BHLArm(Robot):
             self._disconnect_buses()
             raise ValueError(f"Actuators not registered to a bus: {missing}")
 
-    def _disconnect_buses(self) -> None:
+    def _disconnect_buses(self, disable_torque: bool = False) -> None:
         for bus in self._buses.values():
-            bus.disconnect()
+            bus.disconnect(disable_torque=disable_torque)
         self._buses.clear()
         self._actuator_buses.clear()
 
@@ -480,6 +480,6 @@ class BHLArm(Robot):
             if self._actuator_buses:
                 self._write_joint_targets(self._joint_measured_positions.copy())
 
-        self._disconnect_buses()
+        self._disconnect_buses(disable_torque=self.config.disable_on_disconnect)
         self._is_connected = False
         logger.info("%s disconnected.", self)
